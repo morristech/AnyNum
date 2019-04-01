@@ -19,7 +19,7 @@ allprojects {
 Add the **dependency**:
 ```groovy
 dependencies {
-  implementation 'com.github.ALI-KH-Y:AnyNum:v1.0.0'
+  implementation 'com.github.ALI-KH-Y:AnyNum:v2.0'
 }
 ```
 ## Licence
