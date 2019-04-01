@@ -1,10 +1,8 @@
 package ir.ali_kh_y.anynum;
 
-import org.jetbrains.annotations.NotNull;
-
 /**
  * @author Ali Khaleqi Yekta <ali.kh.y.ir @gmail.com>
- * @version 1.0
+ * @version 2.0
  * @see <a href="https://github.com/ALI-KH-Y/AnyNum">Library Web Page</a>
  */
 public final class AnyNum {
@@ -16,7 +14,7 @@ public final class AnyNum {
      * @param text A string including English numbers
      * @return Converted string including Arabic numbers
      */
-    public static String enToAr(@NotNull String text) {
+    public static String enToAr(String text) {
         try {
             char[] arabicChars = {'\u0660', '\u0661', '\u0662', '\u0663', '\u0664', '\u0665', '\u0666', '\u0667', '\u0668', '\u0669'};
             StringBuilder builder = new StringBuilder();
@@ -39,7 +37,7 @@ public final class AnyNum {
      * @param onlyNumber A string including ONLY English numbers
      * @return Converted string including Arabic numbers
      */
-    public static String enNumToAr(@NotNull String onlyNumber) {
+    public static String enNumToAr(String onlyNumber) {
         try {
             char[] arabicChars = {'\u0660', '\u0661', '\u0662', '\u0663', '\u0664', '\u0665', '\u0666', '\u0667', '\u0668', '\u0669'};
             StringBuilder builder = new StringBuilder();
@@ -59,7 +57,7 @@ public final class AnyNum {
      * @param text A string including English/Persian numbers
      * @return Converted string including Arabic numbers
      */
-    public static String anyToAr(@NotNull String text) {
+    public static String anyToAr(String text) {
         return
                 //English to Arabic
                 safeEnToAr(text)
@@ -82,7 +80,7 @@ public final class AnyNum {
      * @param text A string including English numbers
      * @return Converted string including Persian numbers
      */
-    public static String enToFa(@NotNull String text) {
+    public static String enToFa(String text) {
         try {
             char[] persianChars = {'\u06f0', '\u06f1', '\u06f2', '\u0663', '\u06f4', '\u06f5', '\u06f6', '\u06f7', '\u06f8', '\u0669'};
             StringBuilder builder = new StringBuilder();
@@ -105,7 +103,7 @@ public final class AnyNum {
      * @param onlyNumber A string including ONLY English numbers
      * @return Converted string including Persian numbers
      */
-    public static String enNumToFa(@NotNull String onlyNumber) {
+    public static String enNumToFa(String onlyNumber) {
         try {
             char[] persianChars = {'\u06f0', '\u06f1', '\u06f2', '\u0663', '\u06f4', '\u06f5', '\u06f6', '\u06f7', '\u06f8', '\u0669'};
             StringBuilder builder = new StringBuilder();
@@ -125,7 +123,7 @@ public final class AnyNum {
      * @param text A string including English/Arabic numbers
      * @return Converted string including Persian numbers
      */
-    public static String anyToFa(@NotNull String text) {
+    public static String anyToFa(String text) {
         return
                 //English to Persian
                 safeEnToFa(text)
